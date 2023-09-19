@@ -3,7 +3,7 @@ package org.example.Model;
         private String hire;
         private String train;
 
-        public Manager(String name, long employeeId, String startDate, String title, String dateOfBirth, String maritalStatus, String citizenship, String address, String courseOfStudy, String email, String experience) {
+        public Manager(String name, String employeeId, String startDate, String title, String dateOfBirth, String maritalStatus, String citizenship, String address, String courseOfStudy, String email, String experience) {
             super(name, employeeId, startDate, title, dateOfBirth, maritalStatus, citizenship, address, courseOfStudy, email, experience);
             this.hire = hire;
             this.train = train;

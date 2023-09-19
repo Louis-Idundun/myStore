@@ -1,4 +1,10 @@
 package org.example.Service;
 
-public class ManagerServices {
+import org.example.Model.Cashier;
+import org.example.Model.Staff;
+
+public interface ManagerServices {
+    public void managerHire(Cashier cashier);
+
+
 }

@@ -4,7 +4,7 @@ public class Cashier extends Staff{
     private String sell;
     private String greetsCustomer;
     private String issueReceipt;
-    public Cashier(String name, long employeeId, String startDate, String title, String dateOfBirth, String maritalStatus, String citizenship, String address, String courseOfStudy, String email, String experience) {
+    public Cashier(String name, String employeeId, String startDate, String title, String dateOfBirth, String maritalStatus, String citizenship, String address, String courseOfStudy, String email, String experience) {
         super(name, employeeId, startDate, title, dateOfBirth, maritalStatus, citizenship, address, courseOfStudy, email, experience);
         this.sell = sell;
         this.issueReceipt = issueReceipt;

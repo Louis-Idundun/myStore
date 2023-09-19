@@ -4,7 +4,7 @@ import java.util.UUID;
 
 public abstract class Staff {
     private String name;
-    private long employeeId;
+    private String employeeId;
     private String startDate;
     private String title;
     private String dateOfBirth;
@@ -15,7 +15,7 @@ public abstract class Staff {
     private String email;
     private String experience;
 
-    public Staff(String name, long employeeId, String startDate, String title, String dateOfBirth, String maritalStatus, String citizenship, String address, String courseOfStudy, String email, String experience) {
+    public Staff(String name, String employeeId, String startDate, String title, String dateOfBirth, String maritalStatus, String citizenship, String address, String courseOfStudy, String email, String experience) {
         this.name = name;
         this.employeeId = employeeId;
         this.startDate = startDate;
@@ -33,7 +33,7 @@ public abstract class Staff {
         return name;
     }
 
-    public long getEmployeeId() {
+    public String getEmployeeId() {
         return employeeId;
     }
 
@@ -73,64 +73,4 @@ public abstract class Staff {
         return experience;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setEmployeeId(long employeeId) {
-        this.employeeId = employeeId;
-    }
-
-    public void setStartDate(String startDate) {
-        this.startDate = startDate;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public void setDateOfBirth(String dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
-    }
-
-    public void setMaritalStatus(String maritalStatus) {
-        this.maritalStatus = maritalStatus;
-    }
-
-    public void setCitizenship(String citizenship) {
-        this.citizenship = citizenship;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public void setCourseOfStudy(String courseOfStudy) {
-        this.courseOfStudy = courseOfStudy;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public void setExperience(String experience) {
-        this.experience = experience;
-    }
-
-    @Override
-    public String toString() {
-        return "Staff{" +
-                "name='" + name + '\'' +
-                ", employeeId=" + employeeId +
-                ", startDate='" + startDate + '\'' +
-                ", title='" + title + '\'' +
-                ", dateOfBirth='" + dateOfBirth + '\'' +
-                ", maritalStatus='" + maritalStatus + '\'' +
-                ", citizenship='" + citizenship + '\'' +
-                ", address='" + address + '\'' +
-                ", courseOfStudy='" + courseOfStudy + '\'' +
-                ", email='" + email + '\'' +
-                ", experience='" + experience + '\'' +
-                '}';
-    }
 }
