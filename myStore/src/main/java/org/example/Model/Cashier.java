@@ -3,11 +3,11 @@ package org.example.Model;
 public class Cashier extends Staff{
     private String sell;
     private String greetsCustomer;
-    private String issueReceipt;
+    private String dispenseReceipt;
     public Cashier(String name, String employeeId, String startDate, String title, String dateOfBirth, String maritalStatus, String citizenship, String address, String courseOfStudy, String email, String experience) {
         super(name, employeeId, startDate, title, dateOfBirth, maritalStatus, citizenship, address, courseOfStudy, email, experience);
         this.sell = sell;
-        this.issueReceipt = issueReceipt;
+        this.dispenseReceipt = dispenseReceipt;
         this.greetsCustomer = greetsCustomer;
     }
 
@@ -20,7 +20,7 @@ public class Cashier extends Staff{
     }
 
     public String getIssueReceipt() {
-        return issueReceipt;
+        return dispenseReceipt;
     }
 
     public void setSell(String sell) {
@@ -32,7 +32,7 @@ public class Cashier extends Staff{
     }
 
     public void setIssueReceipt(String issueReceipt) {
-        this.issueReceipt = issueReceipt;
+        this.dispenseReceipt = issueReceipt;
     }
 
     @Override
@@ -40,7 +40,7 @@ public class Cashier extends Staff{
         return "Cashier{" +
                 "sell='" + sell + '\'' +
                 ", greetsCustomer='" + greetsCustomer + '\'' +
-                ", issueReceipt='" + issueReceipt + '\'' +
+                ", issueReceipt='" + dispenseReceipt + '\'' +
                 '}';
     }
 }

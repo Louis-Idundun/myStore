@@ -2,9 +2,9 @@ package org.example.Model;
 
 public class Product {
     public String nameOfProduct;
-    public double price;
+    public String price;
 
-    public Product(String nameOfProduct, double price) {
+    public Product(String nameOfProduct, String price) {
         this.nameOfProduct = nameOfProduct;
         this.price = price;
     }
@@ -13,7 +13,7 @@ public class Product {
         return nameOfProduct;
     }
 
-    public double getPrice() {
+    public String getPrice() {
         return price;
     }
 
@@ -21,7 +21,15 @@ public class Product {
         this.nameOfProduct = nameOfProduct;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(String price) {
         this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "nameOfProduct='" + nameOfProduct + '\'' +
+                ", price='" + price + '\'' +
+                '}';
     }
 }

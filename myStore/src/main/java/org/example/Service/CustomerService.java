@@ -1,4 +1,7 @@
 package org.example.Service;
 
-public class CustomerService {
+import org.example.Model.Product;
+
+public interface CustomerService {
+    public void customerBuys(Product product);
 }
